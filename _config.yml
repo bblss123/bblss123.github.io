@@ -1,11 +1,11 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: "Jalpc"
-description: "Jack's blog,use Jekyll and github pages."
-keywords: "Jack,Jalpc,blog,Jekyll,github,gh-pages"
+title: "bblss123's Achieve"
+description: "bblss123's blog,use Jekyll and github pages."
+keywords: "bblss123,Jalpc,blog,Jekyll,github,gh-pages"
 baseurl: "/"
-url: "http://www.jack003.com"
+url: "http://bblss123.github.com"
 # url: "http://127.0.0.1:4000"
 
 # blog img path
@@ -13,21 +13,34 @@ img_path: 'http://www.jack003.com/static/img/blog'
 
 # author
 author:
-  name: 'Jack'
-  first_name: 'Jia'
-  last_name: 'Kun'
-  email: 'me@jack003.com'
-  facebook_username: 'jiakunnj'
-  github_username: 'Jack614'
-  head_img: 'static/img/landing/Jack.jpg'
+  name: 'bblss123'
+  first_name: 'Dylan'
+  last_name: 'Shen'
+  email: 'bblss123@outlook.com'
+  facebook_username: 'bblss123'
+  github_username: 'bblss123'
+  head_img: 'static/img/landing/bblss123.png'
 
 # social link
-jingyu:
-  first_name: 'Yu'
-  last_name: 'Jing'
+me:
+  first_name: 'me'
   description: 'Painter.'
-  link: 'http://angular.jack003.com'
-  email: '805963294@qq.com'
+  link: 'http://blog.csdn.net/bblss123'
+  email: 'bblss123@outlook.com'
+unicornt:
+  first_name: 'unicornt'
+  description: 'orz'
+  link: 'unicornt.ml'
+  email: 'unicornt@outlook.com'
+KyleYoung:
+  first_name: 'KyleYoung'
+  description: 'orz'
+  link: 'http://kyleyoung-ymj.github.io'
+  email: 'kyleyoung-ymj@163.com'
+ShinFeb:
+  first_name: 'ShinFeb'
+  description: 'orz'
+  link: 'ShinFeb.logdowm.com'
 
 # landing page
 landing:
@@ -40,23 +53,23 @@ landing:
   link: 'Link'
 
 # my projects
-project:
-  saplatform:
-    name: 'Saplatform'
-    url: '/Jack614/saplatform'
-    img: 'static/img/landing/saplatform.png'
-  jalpc:
-    name: 'Jalpc'
-    url: '/Jack614/jalpc_jekyll_theme'
-    img: 'static/img/landing/jekyll.png'
-  angularjs:
-    name: 'Jalpc-A'
-    url: '/Jack614/Jalpc-A'
-    img: 'static/img/landing/angularjs.png'
-  Rsser:
-    name: 'Rsser'
-    url: '/Jack614/Rsser'
-    img: 'static/img/landing/rsser.png'
+#project:
+#  saplatform:
+#    name: 'Saplatform'
+#    url: '/Jack614/saplatform'
+#    img: 'static/img/landing/saplatform.png'
+#  jalpc:
+#    name: 'Jalpc'
+#    url: '/Jack614/jalpc_jekyll_theme'
+#    img: 'static/img/landing/jekyll.png'
+#  angularjs:
+#    name: 'Jalpc-A'
+#    url: '/Jack614/Jalpc-A'
+#    img: 'static/img/landing/angularjs.png'
+#  Rsser:
+#    name: 'Rsser'
+#    url: '/Jack614/Rsser'
+#    img: 'static/img/landing/rsser.png'
 
 # blog index
 index:
