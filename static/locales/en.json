@@ -1,30 +1,30 @@
 {
   "website":{
-    "title": "Jack's blog"
+    "title": "bblss123's Achieve"
   },
   "nav":{
     "home": "Home",
     "about_me": "About",
     "skills": "Skills",
-    "projects": "Projects",
+    // "projects": "Projects",
     "career": "Career",
     "blog": "Blog",
     "link": "Link"
   },
   "about_me":{
     "about_me": "About Me",
-    "des": "I am a Python engineer with website development, automation Ops and writing scripts experience. Life is a continuous learning process, so work makes me more rigorous, travel makes my life more colorful. I can make lots of friends when I coding and travel."
+    "des": "哇！祝贺你发现了一只ZJOI的蒟蒻！！这种植物很有药用价值！！！"
   },
   "skills":{
     "my_skills": "My Skills"
   },
-  "projects":{
-    "my_projects": "My Projects",
-    "saplatform": "Saplatform is a automated service for operations, it has asset management, project release, database access function, it can control mass servers.",
-    "jalpc": "Jalpc is a simple, beautiful and swift theme for Jekyll. It has comprehensive function, it can be easily used and edited. It's adapted for many kinds devices.",
-    "angularjs": "It is a web font application written by Angularjs and deployed by Jekyll on github (gh-pages), the backend platform is Leancloud, you can use Parse as well.",
-    "rsser": "Rsser is an Ionic application, with this application we can read news and articles freely, you can add rss address from the given list and add it manually."
-  },
+  // "projects":{
+  //   "my_projects": "My Projects",
+  //   "saplatform": "Saplatform is a automated service for operations, it has asset management, project release, database access function, it can control mass servers.",
+  //   "jalpc": "Jalpc is a simple, beautiful and swift theme for Jekyll. It has comprehensive function, it can be easily used and edited. It's adapted for many kinds devices.",
+  //   "angularjs": "It is a web font application written by Angularjs and deployed by Jekyll on github (gh-pages), the backend platform is Leancloud, you can use Parse as well.",
+  //   "rsser": "Rsser is an Ionic application, with this application we can read news and articles freely, you can add rss address from the given list and add it manually."
+  // },
   "career":{
     "my_career": "My Career",
     "nextcode": "Nextcode",
