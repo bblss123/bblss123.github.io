@@ -6,10 +6,10 @@
     "home": "Home",
     "about_me": "About",
     "skills": "Skills",
-    // "projects": "Projects",
     "career": "Career",
     "blog": "Blog",
     "link": "Link"
+    // "projects": "Projects",
   },
   "about_me":{
     "about_me": "About Me",
