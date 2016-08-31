@@ -1,4 +1,3 @@
-<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
 ---
 layout: post
 title:  "Hello World"
@@ -9,6 +8,7 @@ categories: [Life]
 tags: [blog]
 icon: fa-bookmark-o
 ---
+<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
 
 老规矩，照例的Hello World
 
