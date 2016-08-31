@@ -113,6 +113,6 @@ encoding: "utf-8"
 highlighter: rouge
 markdown: kramdown
 
-#kramdown:
- # input: GFM
- # syntax_highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
