@@ -29,6 +29,7 @@ author:
 #   email: 'bblss123@outlook.com'
 unicornt:
   first_name: 'unicornt'
+  last_name: ''
   description: 'orz'
   link: 'unicornt.ml'
   email: 'unicornt@outlook.com'
@@ -39,6 +40,7 @@ unicornt:
 #   email: 'kyleyoung-ymj@163.com'
 ShinFeb:
   first_name: 'ShinFeb'
+  last_name: ''
   description: 'orz'
   link: 'ShinFeb.logdowm.com'
 
