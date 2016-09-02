@@ -76,12 +76,13 @@ landing:
 
 # blog index
 index:
-  home: 'Home'
-  python: 'Python'
-  linux: 'Linux'
-  html: 'HTML'
-  database: 'Database'
-  mac: 'Mac'
+  # home: 'Home'
+  # python: 'Python'
+  # linux: 'Linux'
+  # html: 'HTML'
+  # database: 'Database'
+  # mac: 'Mac'
+  oi: 'OI'
   life: 'Life'
 
 # donate
