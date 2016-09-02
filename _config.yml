@@ -22,27 +22,27 @@ author:
   head_img: 'static/img/landing/bblss123.png'
 
 # social link
-# me:
-#   first_name: 'me'
-#   description: '蒟蒻'
-#   link: 'http://blog.csdn.net/bblss123'
-#   email: 'bblss123@outlook.com'
+me:
+  first_name: 'me'
+  description: '蒟蒻'
+  link: 'http://blog.csdn.net/bblss123'
+  email: 'bblss123@outlook.com'
 unicornt:
   first_name: 'unicornt'
   last_name: ''
   description: 'orz'
-  link: 'unicornt.ml'
+  link: 'http://unicornt.ml'
   email: 'unicornt@outlook.com'
-# KyleYoung:
-#   first_name: 'KyleYoung'
-#   description: 'orz'
-#   link: 'http://kyleyoung-ymj.github.io'
-#   email: 'kyleyoung-ymj@163.com'
+KyleYoung:
+  first_name: 'KyleYoung'
+  description: 'orz'
+  link: 'http://kyleyoung-ymj.github.io'
+  email: 'kyleyoung-ymj@163.com'
 ShinFeb:
   first_name: 'ShinFeb'
   last_name: ''
   description: 'orz'
-  link: 'ShinFeb.logdowm.com'
+  link: 'http://ShinFeb.logdowm.com'
 
 # landing page
 landing:
