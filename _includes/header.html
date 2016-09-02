@@ -30,7 +30,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="page-scroll" href="/blog/">{{ site.index.home }}</a></li>
 
-                        {% if page.title == site.index.python %}
+                        <!-- {% if page.title == site.index.python %}
                             <li class="active">
                         {% else %}
                             <li>
@@ -63,7 +63,13 @@
                         {% else %}
                             <li>
                         {% endif %}
-                            <a class="page-scroll" href="/mac/">{{ site.index.mac }}</a></li>
+                            <a class="page-scroll" href="/mac/">{{ site.index.mac }}</a></li> -->
+                        {% if page.title == site.index.OI %}
+                            <li class="active">
+                        {% else %}
+                            <li>
+                        {% endif %}
+                            <a class="page-scroll" href="/OI/">{{ site.index.OI }}</a></li>
 
                         {% if page.title == site.index.life %}
                             <li class="active">
