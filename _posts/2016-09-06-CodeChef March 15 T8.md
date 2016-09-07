@@ -18,9 +18,13 @@ icon: fa-bookmark-o
 <h2>题解:</h2>
 
 先来一发无脑的反演。
+<br>
 $$\sum_S \sum_T \sum_{C_i \in E<S,T>} [gcd(C_i)=1]$$
+<br>
 $$=\sum_S \sum_T \sum_{C_i \in E<S,T> } \sum_d|gcd(C_i) \mu(d) $$
+<br>
 $$=\sum_S \sum_T \sum_{C_i \in E<S,T> } \sum_{d \mid C_1,d \mid C_2,... d \mid} \mu(d) $$
+<br>
 
 那么我们只需枚举$d$，把可以被$d$整除的边的都给连起来，数一下每个联通块的点对，最后再乘上$\mu(d)$即可。
 
