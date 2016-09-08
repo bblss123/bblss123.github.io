@@ -42,7 +42,7 @@ ShinFeb:
   first_name: 'ShinFeb'
   last_name: ''
   description: 'orz'
-  link: 'http://ShinFeb.logdowm.com'
+  link: 'http://ShinFeb.logdown.com'
   email: 'lyons0429@qq.com'
 
 # landing page
@@ -51,7 +51,6 @@ landing:
   about: 'About'
   career: 'Career'
   skills: 'Skills'
-#  projects: 'Project'
   blog: 'Blog'
   link: 'Link'
 
@@ -77,11 +76,6 @@ landing:
 # blog index
 index:
   home: 'Home'
-  # python: 'Python'
-  # linux: 'Linux'
-  # html: 'HTML'
-  # database: 'Database'
-  # mac: 'Mac'
   problem: 'Problem'
   oi: 'OI'
   life: 'Life'
@@ -95,7 +89,7 @@ index:
 changyan:
   appid: cysfY7ULn
   conf: prod_861928934cecb7a18e15bedaed9dae29
-disqus:
+# disqus:
   # name: jalpc
   # public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
 
