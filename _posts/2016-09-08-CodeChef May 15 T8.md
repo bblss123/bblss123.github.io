@@ -34,7 +34,7 @@ $n \leq 10^5,q \leq 10^5 $
 
 现在我们看一下每个询问那些区间对答案的有什么样的贡献。
 
-![由于比较懒直接扒分块大师pdf的图片](20160909分块.png)
+![由于比较懒直接扒分块大师pdf的图片](https://github.com/bblss123/bblss123.github.io/blob/master/static/img/blog/20160909%E5%88%86%E5%9D%97.png)
 
 答案由$[s,R]+[L,e]-[s,e]$+左端点在$[L,s]$,右端点在$[e,R]$中的元素构成。
 
