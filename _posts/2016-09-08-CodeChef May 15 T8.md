@@ -34,4 +34,168 @@ $n \leq 10^5,q \leq 10^5 $
 
 现在我们看一下每个询问那些区间对答案的有什么样的贡献。
 
-<img src="/20160909分块.png" width = "100" alt="由于比较懒直接扒分块大师pdf里的图片" align=center />
+![由于比较懒直接扒分块大师pdf的图片](20160909分块.png)
+
+答案由$[s,R]+[L,e]-[s,e]$+左端点在$[L,s]$,右端点在$[e,R]$中的元素构成。
+
+也就是说分块预处理一下然后暴力算后面那部分即可。
+
+当然如果在一个块里暴力大家都会的。
+
+本题细节较多不另叙述~~反正我还有一生可以浪费。。~~
+
+```cpp
+#include<iostream>
+#include<algorithm>
+#include<string.h>
+#include<stdio.h>
+#include<math.h>
+#include<assert.h>
+using namespace std;
+typedef long long ll;
+#define bug(x) cout<<#x<<"="<<x<<" "
+#define debug(x) cout<<#x<<"="<<x<<endl
+const int M=1e5+5;
+int A[M],B[M],S,cnt[M],n,s;
+ll les0[320][M],les1[320][M],les2[320][M],res0[320][M],res1[320][M],res2[320][M],sum[M],pw[M];
+char str[M];
+template<class T>void rd(T &a){
+	a=0;char c;
+	while(c=getchar(),!isdigit(c));
+	do a=a*10+(c^48);
+		while(c=getchar(),isdigit(c));
+}
+inline ll Pow(int x){return 1ll*x*x;}
+inline void pret(){
+	for(int i=0;i*S<=n;++i){
+		for(int j=i*S;j<=n;++j){
+			if(j)les0[i][j]=les0[i][j-1]+cnt[A[j]];
+			if(j)les1[i][j]=les1[i][j-1]+(ll)cnt[A[j]]*j-sum[A[j]];
+			if(j)les2[i][j]=les2[i][j-1]+pw[A[j]]+cnt[A[j]]*Pow(j)-2*sum[A[j]]*j;
+			sum[A[j]]+=j,++cnt[A[j]],pw[A[j]]+=Pow(j);
+		}
+		for(int j=0;j<=s;++j)
+			cnt[j]=sum[j]=pw[j]=0;
+	}
+	A[n+1]=0;
+	for(int i=n/S+1;i;--i){
+		int w=i*S>n?n+1:i*S;
+		for(int j=w-1;j>=0;--j){
+			res0[i][j]=res0[i][j+1]+cnt[A[j]];
+			res1[i][j]=res1[i][j+1]-(ll)cnt[A[j]]*j+sum[A[j]];
+			res2[i][j]=res2[i][j+1]+pw[A[j]]+cnt[A[j]]*Pow(j)-2*sum[A[j]]*j;
+			sum[A[j]]+=j,++cnt[A[j]],pw[A[j]]+=Pow(j);
+		}
+		for(int j=0;j<=s;++j)
+			cnt[j]=sum[j]=pw[j]=0;
+	}
+}
+template<class T>void nt(T x){
+	if(!x)return;
+	nt(x/10),putchar(x%10+48);
+}
+template<class T>void pt(T x){
+	if(!x)putchar('0');
+	else nt(x);
+}
+ll tmp[M],tp[M],tpw[M];
+inline void clr(int l,int r){
+	for(int i=l;i<r;++i)
+		tmp[A[i]]=tp[A[i]]=tpw[A[i]]=0;
+}
+int solve0(int l,int r){
+	int tl=l/S+1,tr=r/S;
+	if(tl==tr+1){
+		ll ans=0;
+		for(int i=l;i<=r;++i)
+			ans+=tmp[A[i]],++tmp[A[i]];
+		clr(l,r+1);
+		return ans;
+	}
+	ll ans=les0[tl][r]+res0[tr][l]-les0[tl][tr*S-1];
+	for(int i=l;i<tl*S;++i)
+		++tmp[A[i]];
+	for(int i=tr*S;i<=r;++i)
+		ans+=tmp[A[i]];
+	clr(l,tl*S);
+	return ans;
+}
+ll solve1(int l,int r){
+	int tl=l/S+1,tr=r/S;
+	if(tl==tr+1){
+		ll ans=0;
+		for(int i=l;i<=r;++i){
+			ans+=(ll)tmp[A[i]]*i-tp[A[i]];
+			tp[A[i]]+=i,++tmp[A[i]];
+		}
+		clr(l,r+1);
+		return ans;
+	}
+	ll ans=les1[tl][r]+res1[tr][l]-les1[tl][tr*S-1];
+	for(int i=l;i<tl*S;++i)
+		++tmp[A[i]],tp[A[i]]+=i;
+	for(int i=tr*S;i<=r;++i)
+		ans+=(ll)i*tmp[A[i]]-tp[A[i]];
+	clr(l,tl*S);
+	return ans;
+}
+ll solve2(int l,int r){
+	int tl=l/S+1,tr=r/S;
+	if(tl==tr+1){
+		ll ans=0;
+		for(int i=l;i<=r;++i){
+			ans+=tpw[A[i]]+tmp[A[i]]*Pow(i)-2*tp[A[i]]*i;
+			tp[A[i]]+=i,++tmp[A[i]],tpw[A[i]]+=Pow(i);
+		}
+		clr(l,r+1);
+		return ans;
+	}
+	ll ans=les2[tl][r]+res2[tr][l]-les2[tl][tr*S-1];
+	for(int i=l;i<tl*S;++i)
+		++tmp[A[i]],tp[A[i]]+=i,tpw[A[i]]+=Pow(i);
+	for(int i=tr*S;i<=r;++i)
+		ans+=tpw[A[i]]+tmp[A[i]]*Pow(i)-2*tp[A[i]]*i;
+	clr(l,tl*S);
+	return ans;
+}
+inline void gao(){
+	scanf("%s",str+1);
+	n=strlen(str+1);
+	for(int i=1;i<=n;++i)
+		str[i]-='a';
+	for(int i=1;i<=n;++i)
+		A[i]=A[i-1]^(1<<str[i]),B[i]=A[i];
+	B[0]=0;
+	sort(B,B+n+1);
+	s=unique(B,B+n+1)-B;
+	for(int i=1;i<=n;++i)
+		A[i]=lower_bound(B,B+s,A[i])-B;
+	S=(int)sqrt(n+1);
+	pret();
+	int q;cin>>q;
+	ll _A=0,_B=0;
+	for(int X,Y,type;q--;){
+		rd(X),rd(Y),rd(type);
+		int L=(X+_A)%n+1;
+		int R=(Y+_B)%n+1;
+		if(L>R)swap(L,R);
+		ll ans;--L;
+		if(type==0)ans=solve0(L,R);
+		if(type==1)ans=solve1(L,R);
+		if(type==2)ans=solve2(L,R);
+		_A=_B,_B=ans%n;
+		pt(ans),putchar('\n');
+	}
+	for(int i=0;(i-1)*S<=n;++i)
+		for(int j=0;j<=n+1;++j){
+			les0[i][j]=les1[i][j]=les2[i][j]=0;
+			res0[i][j]=res1[i][j]=res2[i][j]=0;
+		}
+}
+int main(){
+	int _;
+	for(cin>>_;_--;)gao();
+	return 0;
+}
+```
+
