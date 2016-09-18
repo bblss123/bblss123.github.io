@@ -5,7 +5,7 @@ desc: "CodeChef May15 T8 CBAL Solution"
 keywords: "压位,分块"
 date: 2016-09-07
 categories: [problem]
-tags: [blog]
+tags: [压位,分块]
 icon: fa-bookmark-o
 ---
 

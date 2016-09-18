@@ -5,7 +5,7 @@ desc: "CodeChef May15 T7 SEZ Solution"
 keywords: "二分图匹配"
 date: 2016-09-07
 categories: [problem]
-tags: [blog]
+tags: [二分图匹配]
 icon: fa-bookmark-o
 ---
 

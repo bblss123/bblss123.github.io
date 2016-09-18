@@ -5,7 +5,7 @@ desc: "CodeChef March15 Task8TREECNT2 Solution"
 keywords: "莫比乌斯反演,并查集"
 date: 2016-09-06
 categories: [problem]
-tags: [blog]
+tags: [莫比乌斯反演,并查集]
 icon: fa-bookmark-o
 ---
 
