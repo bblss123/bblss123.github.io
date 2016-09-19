@@ -8,7 +8,7 @@ baseurl: "/"
 url: "http://bblss123.github.com"
 url: "http://127.0.0.1:4000"
 
-blog img path
+# blog img path
 img_path: 'http://bblss123.cf/static/img/blog'
 
 # author
