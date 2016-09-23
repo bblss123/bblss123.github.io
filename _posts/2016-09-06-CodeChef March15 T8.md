@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "CodeChef March15 Task8TREECNT2 莫比乌斯反演+并查集"
-desc: "CodeChef March15 Task8TREECNT2 Solution"
+title:  "CodeChef March15 T8 TREECNT2 莫比乌斯反演+并查集"
+desc: "CodeChef March15 T8 TREECNT2 Solution"
 keywords: "莫比乌斯反演,并查集"
 date: 2016-09-06
 categories: [problem]
