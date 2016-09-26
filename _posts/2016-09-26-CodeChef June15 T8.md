@@ -25,7 +25,7 @@ $10$年了，我终于会推斐波那契数列通项了！
 >
 >$x_{n+2}-r x_{n+1}=s(x_{n+1}-rx_n)$
 >
->$\begin{cases} s+r=1 \\ -sr=1 \end{cases}$
+>$\begin{cases} s+r=1 \\\ -sr=1 \end{cases}$
 >
 >展开一开始的式子，迭代可得:$fib(n)=s^{n-1}+r\times fib(n-1)$
 >
