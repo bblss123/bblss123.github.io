@@ -9,7 +9,7 @@ url: "http://bblss123.github.com"
 url: "http://127.0.0.1:4000"
 
 # blog img path
-img_path: 'http://bblss123.cf/static/img/blog'
+img_path: 'http://bblss123.github.io/static/img/blog'
 
 # author
 author:
